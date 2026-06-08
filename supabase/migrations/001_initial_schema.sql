@@ -32,7 +32,7 @@ create table public.rulebooks (
   source_type rulebook_source_type not null,
   source_url text,
   file_name text,
-  language_code text not null default 'en',
+  language_code text not null default 'ko',
   version_label text,
   ingestion_status ingestion_status not null default 'queued',
   raw_ocr_text text,
