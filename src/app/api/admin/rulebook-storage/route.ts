@@ -102,6 +102,7 @@ export async function POST(request: Request) {
     const metadata = {
       ...((existingRulebooks?.[0]?.metadata as Record<string, unknown> | null) ?? {}),
       storageStatus: "uploaded",
+      reviewStatus: "needs_text_review",
       bucket: BUCKET_ID,
       objectPath,
       publicUrl,
